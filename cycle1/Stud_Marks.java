@@ -18,4 +18,5 @@ public class Stud_Marks
         System.out.println("Sum:"+total);
         System.out.println("Percentage:"+p);
     }
+
 }
