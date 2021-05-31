@@ -7,8 +7,6 @@ private int id;
   
   Student( )
  {
-  
-   
     id=1;
     name = "Arun" ;  
 }
