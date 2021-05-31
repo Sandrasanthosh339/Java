@@ -28,5 +28,4 @@ ParameterizedConstructor s2=new ParameterizedConstructor(222,"Aryan");
   s2.display();  
   
   }  
-
- }
+}
