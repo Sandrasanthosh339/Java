@@ -1,51 +1,29 @@
-import java.util.*;
-class Complex {
-    int real, imaginary;
-
-    Complex()
-    {
-    }
-
-    Complex(int tempReal, int tempImaginary)
-    {
-        real = tempReal;
-        imaginary = tempImaginary;
-    }
-
-    Complex addComp(Complex C1, Complex C2)
-    {
- 
-        Complex temp = new Complex();
-        temp.real = C1.real + C2.real;
-        temp.imaginary = C1.imaginary + C2.imaginary;
-        return temp;
-    }
-}
- 
-public class AddComplex
+import java.util.Scanner;
+class AddComplex
 {
-
-    public static void main(String[] args)
-    {
-
-        Complex C1 = new Complex(3, 2);
-
-        System.out.println("Complex number 1 : "
-                           + C1.real + " + i"
-                           + C1.imaginary);
-
-        Complex C2 = new Complex(9, 5);
-
-        System.out.println("Complex number 2 : "
-                           + C2.real + " + i"
-                           + C2.imaginary);
-
-        Complex C3 = new Complex();
-
-        C3 = C3.addComp(C1, C2);
-
-        System.out.println("Sum of complex number : "
-                           + C3.real + " + i"
-                           + C3.imaginary);
-    }
+  float real1,imag1,real2,imag2;
+ 
+ void get()
+  { 
+Scanner op=new Scanner(System.in);
+     System.out.print("\n Enter the real part of first complex number: ");
+     real1=op.nextFloat();
+  System.out.print(" Enter the imaginary part of first complex number: ");
+     imag1=op.nextFloat();
+  System.out.print("\n Enter the real part of second complex number: ");
+     real2=op.nextFloat();
+  System.out.print(" Enter the imaginary part of second complex number :  ");
+     imag2=op.nextFloat();
+  }
+void display()
+  {   
+      System.out.println(" \n Sum of complex numbers " + real1 + "+" + imag1 + "i and "  + real2 + "+" + imag2 + "i is " + (real1+real2) + "+" + (imag1+imag2) + "i");
+  }
+ 
+public static void main(String args[]) 
+ {
+  AddComplex cmp = new AddComplex();
+   cmp.get();
+   cmp.display();
+ }
 }
