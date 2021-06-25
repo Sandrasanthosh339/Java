@@ -1,13 +1,11 @@
 import java.util.Scanner;
 public class EmployeeP4
 {
-    public static void main(String[] args) 
-    {
-        int count,eno,esalarytemp,flag = 0;
-
-        Scanner scan = new Scanner(System.in);
-     
-        System.out.print("how many  employees information you want enter :");
+public static void main(String[] args) 
+{
+int count,eno,esalarytemp,flag = 0;
+Scanner scan = new Scanner(System.in);
+System.out.print("how many  employees information you want enter :");
         count = scan.nextInt();
         String eName[] = new String[count];
         int salary[] = new int[count];
@@ -15,28 +13,23 @@ public class EmployeeP4
         Scanner scan2 = new Scanner(System.in);
         Scanner scan3 = new Scanner(System.in);
         Scanner scan4 = new Scanner(System.in);
-        System.out.println("Enter the eno :");
+        
         for(int i = 0; i < count; i++)
         {
+System.out.println("Enter the eno :");
             no[i] = scan2.nextInt();
-        }
+
 System.out.println("Enter the name :");
-        for(int i = 0; i < count; i++)
-        {
-            eName[i] = scan3.nextLine();
-        }
-        System.out.println("Enter the salary :");
-        for(int i = 0; i < count; i++)
-        {
-            salary[i] = scan4.nextInt();
-        }
-      
-          Scanner s = new Scanner(System.in);
-        System.out.print("Enter the employee number you want to find:");
-        int x = s.nextInt();
-        for(int i = 0; i < count; i++)
-        {
-            if(no[i] == x)
+eName[i] = scan3.nextLine();
+System.out.println("Enter the salary :");
+salary[i] = scan4.nextInt();
+}
+Scanner s = new Scanner(System.in);
+System.out.print("Enter the employee number you want to find:");
+int x = s.nextInt();
+for(int i = 0; i < count; i++)
+{
+if(no[i] == x)
             {
                 flag = 1;
                 break;
